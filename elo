@@ -1,0 +1,12 @@
+class Player:
+    def __init__(self, name, rating=1500):
+        self.name = name
+        self.rating = rating
+
+#Using Elo formula for updating ratings
+def performance_rating(rating_player, rating_opponent):
+    return 1 / (1 + 10 ** ((rating_opponent - rating_player) / 400))
+
+def update_rating(current_rating, actual_score, expected_score, k_factor=30):
+    return current_rating + k_factor * (actual_score - expected_score)
+
