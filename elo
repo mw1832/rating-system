@@ -1,9 +1,17 @@
 class Player:
-    def __init__(self, name, rating=1500):
+    def __init__(self, name, rating=1500,ratdev= 350,time=0):
         self.name = name
         self.rating = rating
+        self.ratdev = ratdev
+        self.time = time
 
-#Using Elo formula for updating ratings
+#update Rating Deviation after a tournament if the sumo is active
+def update_ratdev(sumo, participated, )
+
+#update rating after rating deviations are updated
+def update_rating(sumo, arrayOpp, , 
+
+
 def performance_rating(rating_player, rating_opponent):
     return 1 / (1 + 10 ** ((rating_opponent - rating_player) / 400))
 
