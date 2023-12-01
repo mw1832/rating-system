@@ -8,7 +8,7 @@ class Player:
 #update Rating Deviation after a tournament if the sumo is active
 def update_ratdev(sumo, participated, )
 
-#update rating after rating deviations are updated
+#update rating after rating deviations are updated arrayOpp has [opp.rating, opp.ratdev,]
 def update_rating(sumo, arrayOpp, , 
 
 
